@@ -88,11 +88,12 @@ nav,
 }
 
 .banner-image {
-    width: 100%;
+    max-width: 100%;
     margin-top: 50px;
 }
 
 /* main-body */
+
 main {
     max-width: 1440px;
     margin: 0 auto;
@@ -133,10 +134,21 @@ main {
 
 @media screen and (max-width:576px) {
 
-    nav,nav>ul {
+    nav, nav>ul, .section-1 {
         flex-direction: column;
+        align-items: flex-start;
     }
-    .section-1{
-        flex-direction: column;
+    nav>h3{
+        margin-left: 30px;
     }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-image{
+        width: 100%;
+    }
+    .features{
+        grid-template-columns: 1fr;
+    }
+
 }
